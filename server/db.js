@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
-const uri =
-  "mongodb+srv://hennelflori:random123@cluster0.jqiuyf8.mongodb.net/discord_clone";
+require('dotenv').config();
+const uri = process.env.MONGODB_URI;
 
 let dbConnection;
 module.exports = {
